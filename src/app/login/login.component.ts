@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
   verifity() {
     this.http.post('http://localhost:8989/api/login',
           new User('fulviocanducci@hotmail.com', 'Ab@123456'), this.httpOptions )
-      .subscribe(data => {
+      .subscribe((data: any) => {
         this.store.setItem('bearer', data.token);
       },
       err => {
