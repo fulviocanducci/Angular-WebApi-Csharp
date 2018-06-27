@@ -7,6 +7,8 @@ import { HowtoComponent } from './howto/howto.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { ReferenceComponent } from './reference/reference.component';
+import { MenuItemComponent } from './menu-item/menu-item.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,12 +16,14 @@ import { ReferenceComponent } from './reference/reference.component';
     HowtoComponent,
     HomeComponent,
     LoginComponent,
-    ReferenceComponent
+    ReferenceComponent,
+    MenuItemComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

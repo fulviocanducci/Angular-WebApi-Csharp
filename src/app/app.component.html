@@ -1,16 +1,17 @@
-<ul>  
-  <li>
-    <h2><a routerLink="">Home</a></h2>
-  </li>
-  <li>
-    <h2><a routerLink="/howto">Howto</a></h2>
-  </li>  
-  <li>
-    <h2><a routerLink="/login">Login - Entrar</a></h2>
-  </li>
-  <li>
-    <h2><a routerLink="/reference">Lista de Referencias</a></h2>
-  </li>
-</ul>
-<router-outlet></router-outlet>
-
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Logo</a>
+        <a href="#" data-activates="menu-mobile" class="button-collapse">
+            <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">            
+            <app-menu-item></app-menu-item>
+        </ul>
+        <ul class="side-nav" id="menu-mobile">
+            <app-menu-item></app-menu-item>
+        </ul>
+    </div>
+</nav>
+<div>
+    <router-outlet></router-outlet>
+</div>
